@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    "rootDir": "./src", // 소스 파일 안에서 root 폴더를 명시
+    "outDir": "./build/js", // ts 컴파일 후 경로
+    "target": "ES2015", // ES2015 버전의 js 파일로 컴파일
+    "noEmitOnError": true, // error가 있을 때 emitting(방출) file을 하지 않음
+    "module": "ESNext", // 어떤 module 시스템을 사용할 지 (import)
+    "moduleResolution": "Node",
+    "esModuleInterop": true,
+    "lib": ["ESNext", "DOM"],
+    "strict": true // 엄격한 타입 사용
+  },
+  "include": [
+    // 원하는 ts 파일만 컴파일 하도록 명시
+    "./src/**/*.ts"
+  ],
+  "exclude": [
+    // 컴파일 시에 제외할 목록
+    "node_modules"
+  ]
+}
